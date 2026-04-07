@@ -26,7 +26,7 @@ npm run preview
 4. Leave all settings as default — Vercel auto-detects Vite
 5. Click **Deploy**
 
-Live URL: `https://portfolio-nanditha-git-main-nandithas-projects-ce316ce0.vercel.app`
+Live URL: `https://nanditha-portfolio-lime.vercel.app/`
 
 
 ## Project structure
