@@ -1,0 +1,87 @@
+.section {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 72px 2.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.strip {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.heading {
+  font-family: var(--font-serif);
+  font-size: clamp(28px, 4vw, 40px);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  font-weight: 400;
+  flex: 1;
+  min-width: 220px;
+}
+
+.linkGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--line);
+  min-width: 260px;
+}
+
+.link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  background: var(--card);
+  padding: 0.9rem 1.25rem;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+
+.link:hover {
+  background: #f5f4f1;
+}
+
+.linkLabel {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink3);
+  flex-shrink: 0;
+}
+
+.linkDisplay {
+  font-size: 13px;
+  color: var(--ink2);
+  transition: color 0.15s;
+  text-align: right;
+  word-break: break-all;
+}
+
+.link:hover .linkDisplay {
+  color: var(--ink);
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 56px 1.25rem;
+  }
+
+  .strip {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .linkGroup {
+    width: 100%;
+  }
+}
